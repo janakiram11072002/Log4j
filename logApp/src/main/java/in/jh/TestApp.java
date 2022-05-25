@@ -19,26 +19,36 @@ public class TestApp {
 	
 	
 	public static void main(String[] args) throws Exception {
-		//1. create layout
-//		Layout layout = new SimpleLayout();
-//		Layout layout = new HTMLLayout();
-//		Layout layout = new XMLLayout();	
-		Layout layout = new PatternLayout("%p %d %C %M %m %n");
-		
-		//2. create appender + link layout
+//		//1. create layout
+////		Layout layout = new SimpleLayout();
+////		Layout layout = new HTMLLayout();
+////		Layout layout = new XMLLayout();	
+////		Layout layout = new PatternLayout("%p %d %C %M %m %n");
+////		Layout layout = new PatternLayout("%L) %d{dd-MMM-yyyy HH:mm:ss SSS} %l - %C - %M - %p  - %m - %r%n");
+//		Layout layout = new PatternLayout("%d{dd-MM-yy hh:mm} %p --- [%M]:%C %L %m %n");
+//		
+//		//2. create appender + link layout
 //		Appender app = new ConsoleAppender(layout);
-		Appender app = new FileAppender(layout,"E:/MyLogs/data.log");
-		
-		//4.link appender with logger
-		log.addAppender(app);
+////		Appender app = new FileAppender(layout,"E:/MyLogs/data.log");
+//		
+//		//4.link appender with logger
+//		log.addAppender(app);
 		
 		//---print messages---
-		log.debug("FROM DEBUG");
-		log.info("FROM INFO");
-		log.fatal("FROM FATAL");
-		log.error("FROM ERROR");
-		log.warn("FROM WARN");
+//		log.debug("FROM DEBUG");
+//		log.info("FROM INFO");
+//		log.fatal("FROM FATAL");
+//		log.error("FROM ERROR");
+//		log.warn("FROM WARN");
 		
+		
+		log.debug("FROM ONE");
+		log.info("FROM TWO");
+		log.warn("FROM ABC");
+		log.error("FROM XYZ");
+		log.fatal("FROM MNO");
+		
+		System.out.println("Done");
 		
 	}
 
